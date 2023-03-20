@@ -103,6 +103,34 @@ body {
     line-height: 1.5;
 }
 
+.latest-updates {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .latest-updates:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #007bff;
+  }
+  
+  .latest-updates h2 {
+    margin-bottom: 20px;
+  }
+  
+  .latest-updates p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+
 /* Style the footer */
 .footer {
     background-color: #212529;
