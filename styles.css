@@ -1,155 +1,51 @@
-/* Set a dark background color */
-body {
-    background-color: #343a40;
-    color: #f7f7f7;
-}
-
-/* Style the navigation bar */
-.navbar {
-    background-color: #212529;
-    border: none;
-}
-
-.nav-link {
-    color: #f7f7f7;
-}
-
-/* Style the header */
-.jumbotron {
-    background-image: url("https://source.unsplash.com/1600x900/?marijuana");
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Import Gameplay font */
+@font-face {
+    font-family: "Gameplay";
+    src: url("Gameplay.ttf");
+  }
+  
+  /* Set the font, background, and text color for the body */
+  body {
+    font-family: "Gameplay", "Courier New", monospace;
+    background-color: #000;
     color: #fff;
-}
-
-.jumbotron h1 {
-    font-size: 72px;
-    font-weight: bold;
-    text-shadow: 2px 2px #333;
-}
-
-/* Style the main content */
-.container {
-    color: #f7f7f7;
-}
-
-/* Style the navigation bar */
-.navbar {
-    background-color: #343a40;
-    border: none;
-}
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-link {
-    color: #f7f7f7;
-}
-
-/* Style the header */
-.jumbotron {
-    background-image: url("https://source.unsplash.com/1600x900/?marijuana");
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.jumbotron h1 {
-    font-size: 72px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px #333;
-}
-
-.jumbotron p {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px #333;
-}
-
-/* Style the main content */
-.container {
-    margin-top: 50px;
-}
-
-.col-md-8 h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.col-md-8 p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.col-md-4 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.col-md-4 ul {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-.latest-updates {
-    position: relative;
-    padding: 20px;
-    margin-bottom: 50px;
   }
   
-  .latest-updates:before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid #007bff;
-  }
-  
-  .latest-updates h2 {
-    margin-bottom: 20px;
-  }
-  
-  .latest-updates p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
+    /* Set font weight for headings */
+    h1, h2, h3, h4 {
+        font-weight: bold;
+    }
 
-/* Style the footer */
-.footer {
-    background-color: #212529;
-    color: #f7f7f7;
-    text-align: center;
-    padding: 1px 0;
-}
+    /* Set the max width for the container */
+    .container {
+        max-width: 900px;
+    }
 
-.footer p {
-    font-size: 10px;
-    margin: 1;
-}
+    /* Style the jumbotron */
+    .jumbotron {
+        background-color: #111;
+        border: 3px solid #fff;
+        padding: 1rem 2rem;
+    }
 
-/* Style the button */
-.btn-primary {
-    background-color: #0069d9;
-    border: none;
-}
+    /* Style list group items */
+    .list-group-item {
+        background-color: #111;
+        border-color: #fff;
+    }
 
-.btn-primary:hover {
-    background-color: #0051a8;
-}
+    /* Set the text color for the table */
+    .table {
+        color: #fff;
+    }
+
+    /* Style the table with dark theme */
+    .table-dark {
+        background-color: #111;
+        border-color: #fff;
+    }
+
+    /* Style table header and data cells with dark theme */
+    .table-dark th, .table-dark td {
+        border-color: #fff;
+    }

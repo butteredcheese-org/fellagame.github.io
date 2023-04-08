@@ -1,0 +1,35 @@
+<section class="container my-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h1 class="text-center mb-5">Patch Notes</h1>
+
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="card-title mb-0">Version 1.0.0</h2>
+                        <p class="card-subtitle">October 1, 2022</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Added new levels</li>
+                            <li class="list-group-item">Improved game performance</li>
+                            <li class="list-group-item">Fixed various bugs and glitches</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="card-title mb-0">Version 1.1.0</h2>
+                        <p class="card-subtitle">December 15, 2022</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Added new power-ups</li>
+                            <li class="list-group-item">Improved graphics</li>
+                            <li class="list-group-item">Fixed various bugs and glitches</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
