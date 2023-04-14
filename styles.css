@@ -2,50 +2,338 @@
 @font-face {
     font-family: "Gameplay";
     src: url("Gameplay.ttf");
-  }
-  
-  /* Set the font, background, and text color for the body */
-  body {
+    }
+    
+    /* Set the font, background, and text color for the body */
+    body {
     font-family: "Gameplay", "Courier New", monospace;
     background-color: #000;
     color: #fff;
+    }
+    /* Set font weight for headings */
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+/* Set the max width for the container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Style the jumbotron */
+.jumbotron {
+    background-color: #111;
+    border: 3px solid #fff;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+}
+
+/* Style list group items */
+.list-group-item {
+    background-color: #111;
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Set the text color for the table */
+.table {
+    color: #fff;
+}
+
+/* Style the table with dark theme */
+.table-dark {
+    background-color: #111;
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Style table header and data cells with dark theme */
+.table-dark th, .table-dark td {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Style the hero section */
+.hero-image {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style the hero text */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* Style the games section */
+#games-section {
+    padding: 5rem 0;
+    background-color: #111;
+}
+
+#games-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.card {
+    background-color: #222;
+    border-color: #fff;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #ddd;
+}
+
+/* Style the about section */
+#about-section {
+    padding: 5rem 0;
+    background-color: #111;
+}
+
+#about-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+#about-section p {
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+#about-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#about-section li {
+    margin-bottom: 1rem;
+}
+
+/* Style the contact section */
+#contact-section {
+    padding: 5rem 0;
+    background-color: #111;
+}
+
+#contact-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+#contact-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-section li {
+    margin-bottom: 1rem;
+}
+
+/* Style the form */
+form {
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+    background-color: #111;
+    padding: 2rem 0;
+    color: #fff;
+    margin-top: 5rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #00bfff;
+}
+/* Media Queries */
+
+/* For screens smaller than 576px (mobile) */
+@media (max-width: 576px) {
+    .container {
+    padding: 0 1rem;
+    }
+    .jumbotron {
+        padding: 0.5rem 1rem;
+    }
+    
+    #about-section .row {
+        flex-direction: column;
+    }
+    
+    #about-section img {
+        margin-bottom: 2rem;
+    }
+    
+    #contact-section .row {
+        flex-direction: column;
+    }
+    
+    #contact-section form {
+        margin-bottom: 1rem;
+    }
+    
+    footer .row {
+        flex-direction: column;
+    }
+}
+
+/* For screens between 576px and 992px (tablet) */
+@media (min-width: 576px) and (max-width: 992px) {
+.jumbotron {
+padding: 1rem;
+}
+#about-section .row {
+    flex-direction: column;
+}
+
+#about-section img {
+    margin-bottom: 2rem;
+}
+
+#contact-section .row {
+    flex-direction: column;
+}
+
+#contact-section form {
+    margin-bottom: 1rem;
+}
+
+footer .row {
+    flex-direction: column;
+}
+}
+
+/* For screens larger than 992px (desktop) */
+@media (min-width: 992px) {
+.jumbotron {
+padding: 2rem;
+}
+#about-section .row {
+    flex-direction: row;
+}
+
+#about-section img {
+    margin-right: 2rem;
+    margin-bottom: 0;
+}
+
+#contact-section .row {
+    flex-direction: row;
+}
+
+#contact-section form {
+    margin-right: 2rem;
+    margin-bottom: 0;
+}
+
+footer .row {
+    flex-direction: row;
+}
+
+.hr-blurry {
+    width: 100%;
+    /* other styles */
   }
   
-    /* Set font weight for headings */
-    h1, h2, h3, h4 {
-        font-weight: bold;
-    }
+  .new-era {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #111;
 
-    /* Set the max width for the container */
-    .container {
-        max-width: 900px;
-    }
+  }
+  
+  .new-era h2 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .new-era p {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .new-era .btn-primary {
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 50px;
+  }
+  
 
-    /* Style the jumbotron */
-    .jumbotron {
-        background-color: #111;
-        border: 3px solid #fff;
-        padding: 1rem 2rem;
-    }
+  
+    
 
-    /* Style list group items */
-    .list-group-item {
-        background-color: #111;
-        border-color: #fff;
-    }
-
-    /* Set the text color for the table */
-    .table {
-        color: #fff;
-    }
-
-    /* Style the table with dark theme */
-    .table-dark {
-        background-color: #111;
-        border-color: #fff;
-    }
-
-    /* Style table header and data cells with dark theme */
-    .table-dark th, .table-dark td {
-        border-color: #fff;
-    }
+}
